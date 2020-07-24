@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>indexPageControllerServlet</servlet-name>
+        <servlet-class>com.AppStore.servlets.indexPageControllerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addtocart.html</servlet-name>
+        <servlet-class>com.AppStore.servlets.addtocart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexPageControllerServlet</servlet-name>
+        <url-pattern>/index.html</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UserDownloads</servlet-name>
+        <servlet-class>com.AppStore.servlets.UserDownloads</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDownloads</servlet-name>
+        <url-pattern>/download.html</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminController</servlet-name>
+        <servlet-class>com.AppStore.servlets.AdminController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminController</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addtocart.html</servlet-name>
+        <url-pattern>/addtocart.html</url-pattern>
+    </servlet-mapping>
+</web-app>
